@@ -11,8 +11,8 @@ export interface IUser {
 const UserSchema = new Schema<IUser>({
   username: { type: String, required: true, unique: true },
   password: { type: String, required: true },
-    availableMoney: { trpe: Number, default: 5000 },
-//   purchasedItem:
+  availableMoney: { type: Number, default: 5000 },
+  //   purchasedItem:
 });
 
-export const UserModel =model<IUser>("user", UserSchema)
+export const UserModel = model<IUser>("users", UserSchema);

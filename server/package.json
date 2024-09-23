@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"node ./build.index.js",
-  "dev": "nodemon ./src/index.ts",
-  "build": "tsc -p ."
+    "start": "node ./build.index.js",
+    "dev": "nodemon ./src/index.ts",
+    "build": "tsc -p ."
   },
   "repository": {
     "type": "git",
@@ -29,5 +29,9 @@
     "nodemon": "^3.1.7",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.2"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/jsonwebtoken": "^9.0.7"
   }
 }
